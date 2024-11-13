@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sorter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Sorter</h1>
+        <p class="instruction">Enter numbers separated by commas or spaces:</p>
+        
+        <div class="input-group">
+            <input type="text" id="numberInput" placeholder="e.g., 3, 5, 2, 9 or 3 5 2 9">
+            <button id="sortButton">Sort</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="sort-options">
+            <label>
+                <input type="radio" name="sortAlgorithm" id="bubbleSort" checked> Bubble Sort
+            </label>
+            <label>
+                <input type="radio" name="sortAlgorithm" id="selectionSort"> Selection Sort
+            </label>
+            <label>
+                <input type="radio" name="sortAlgorithm" id="insertionSort"> Insertion Sort
+            </label>
+        </div>
+        
+        <p id="errorMessage" class="error"></p>
+        <div id="outputMessage" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
